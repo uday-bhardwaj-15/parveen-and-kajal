@@ -1,0 +1,566 @@
+{
+  "project": {
+    "name": "wedding-invitation",
+    "description": "An enchanted cinematic digital wedding invitation web application for Inshu & Archit featuring a 3D animated opening envelope gate, video hero background, synchronized music playback, interactive scratch-to-reveal card with .ics export, photo gallery, real-time countdown, itinerary timeline, and venue maps.",
+    "languages": [
+      "TypeScript",
+      "TSX",
+      "CSS",
+      "JSON",
+      "Markdown"
+    ],
+    "frameworks": [
+      "Next.js",
+      "React 19",
+      "Tailwind CSS v4",
+      "Radix UI",
+      "Lucide React"
+    ],
+    "analyzedAt": "2026-09-27T12:45:00.000Z",
+    "gitCommitHash": "0ebfcfc8d7d66c357b1a175891b78845fc4459e9"
+  },
+  "nodes": [
+    {
+      "id": "file:src/app/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "src/app/page.tsx",
+      "summary": "Main home page orchestrating the interactive wedding invitation sequence: EnvelopeGate unlock, PetalField animation, background YouTube music toggle, hero video, personalized greeting, scratch-to-reveal section, photo carousel, countdown, itinerary timeline, venue details, and footer.",
+      "tags": [
+        "page",
+        "entrypoint",
+        "orchestration",
+        "client-component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/layout.tsx",
+      "type": "file",
+      "name": "layout.tsx",
+      "filePath": "src/app/layout.tsx",
+      "summary": "Root layout for Next.js App Router configuring HTML metadata (Cinematic Wedding Invitation), responsive viewport settings, typography classes, and global CSS inclusion.",
+      "tags": [
+        "layout",
+        "root",
+        "metadata",
+        "app-router"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/not-found.tsx",
+      "type": "file",
+      "name": "not-found.tsx",
+      "filePath": "src/app/not-found.tsx",
+      "summary": "Custom 404 page styled with romantic wedding theme aesthetics directing lost visitors back to the main invitation.",
+      "tags": [
+        "page",
+        "error-handling",
+        "404"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/invite/EnvelopeGate.tsx",
+      "type": "file",
+      "name": "EnvelopeGate.tsx",
+      "filePath": "src/components/invite/EnvelopeGate.tsx",
+      "summary": "Full-screen 3D interactive envelope gate that acts as a portal. Renders realistic gold-embossed wax seal, top flap 3D rotation, card slide-up animation, and triggers the experience unlock on user interaction.",
+      "tags": [
+        "component",
+        "animation",
+        "3d-transform",
+        "interactive-gate"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/invite/HeroVideo.tsx",
+      "type": "file",
+      "name": "HeroVideo.tsx",
+      "filePath": "src/components/invite/HeroVideo.tsx",
+      "summary": "Cinematic full-viewport hero section featuring background looping video, subtle scroll parallax animation, bride and groom names in gold serif typography, parental blessings, and scroll indicators.",
+      "tags": [
+        "component",
+        "video",
+        "hero",
+        "parallax"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/invite/MusicToggle.tsx",
+      "type": "file",
+      "name": "MusicToggle.tsx",
+      "filePath": "src/components/invite/MusicToggle.tsx",
+      "summary": "Audio player controller embedding a hidden YouTube IFrame player. Manages audio playback lifecycle, volume normalization, precise start/end loop boundaries (0:17 - 1:20), autoplay on envelope unlock, and a floating toggle button.",
+      "tags": [
+        "component",
+        "audio",
+        "youtube-api",
+        "media-controller"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/invite/ScratchReveal.tsx",
+      "type": "file",
+      "name": "ScratchReveal.tsx",
+      "filePath": "src/components/invite/ScratchReveal.tsx",
+      "summary": "Heart-shaped interactive scratch canvas component utilizing HTML5 2D Canvas composite operations with touch/pointer tracking. Reveals the wedding date on scratch completion and generates downloadable .ics calendar files.",
+      "tags": [
+        "component",
+        "canvas",
+        "gamification",
+        "calendar-ics"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/invite/Gallery.tsx",
+      "type": "file",
+      "name": "Gallery.tsx",
+      "filePath": "src/components/invite/Gallery.tsx",
+      "summary": "High-performance touch/pointer swipeable photo gallery featuring drag threshold detection, keyboard navigation, smooth spring-like transitions, counter badges, and thumbnail pagination dots.",
+      "tags": [
+        "component",
+        "carousel",
+        "touch-gestures",
+        "gallery"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/invite/Countdown.tsx",
+      "type": "file",
+      "name": "Countdown.tsx",
+      "filePath": "src/components/invite/Countdown.tsx",
+      "summary": "Real-time wedding countdown timer displaying tabular animated days, hours, minutes, and seconds remaining until the ceremony date, with live expiration alerts.",
+      "tags": [
+        "component",
+        "timer",
+        "realtime",
+        "countdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/invite/Timeline.tsx",
+      "type": "file",
+      "name": "Timeline.tsx",
+      "filePath": "src/components/invite/Timeline.tsx",
+      "summary": "Structured wedding event itinerary timeline rendering Haldi, Mehendi, Bhaat, Ring Ceremony & Sangeet, Phoolon ki Haldi, and Wedding Ceremony with scroll-reveal transitions and venue markers.",
+      "tags": [
+        "component",
+        "itinerary",
+        "timeline",
+        "schedule"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/invite/Venue.tsx",
+      "type": "file",
+      "name": "Venue.tsx",
+      "filePath": "src/components/invite/Venue.tsx",
+      "summary": "Venue details card showing resort name, full address, custom architectural SVG illustration, and a direct Google Maps navigation button.",
+      "tags": [
+        "component",
+        "maps",
+        "location",
+        "venue"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/invite/PetalField.tsx",
+      "type": "file",
+      "name": "PetalField.tsx",
+      "filePath": "src/components/invite/PetalField.tsx",
+      "summary": "Lightweight falling rose petal ambient background particle effect with randomized CSS drift, duration, and stagger timings triggered once the envelope opens.",
+      "tags": [
+        "component",
+        "ambient",
+        "particles",
+        "animation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/invite/Reveal.tsx",
+      "type": "file",
+      "name": "Reveal.tsx",
+      "filePath": "src/components/invite/Reveal.tsx",
+      "summary": "Scroll-triggered viewport entry animations wrapper (Reveal), decorative ornamental divider with gold heart (Divider), and typography section headers (SectionTitle).",
+      "tags": [
+        "component",
+        "animation",
+        "scroll-observer",
+        "typography"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/data/invite.ts",
+      "type": "file",
+      "name": "invite.ts",
+      "filePath": "src/data/invite.ts",
+      "summary": "Single source of truth containing Sanskrit Ganesh Shloka, bride & groom biographies, parents lineage, ISO wedding date, multi-day itinerary milestones, venue address, RSVP contacts, and family slogans.",
+      "tags": [
+        "data",
+        "content",
+        "schema",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/use-reveal.ts",
+      "type": "file",
+      "name": "use-reveal.ts",
+      "filePath": "src/hooks/use-reveal.ts",
+      "summary": "Custom React hook using IntersectionObserver to trigger performant one-shot CSS reveal transitions as elements scroll into the viewport.",
+      "tags": [
+        "hook",
+        "intersection-observer",
+        "performance"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/use-mobile.tsx",
+      "type": "file",
+      "name": "use-mobile.tsx",
+      "filePath": "src/hooks/use-mobile.tsx",
+      "summary": "Responsive design hook evaluating matchMedia queries for mobile breakpoints (<768px).",
+      "tags": [
+        "hook",
+        "responsive",
+        "media-query"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "src/lib/utils.ts",
+      "summary": "Utility helper combining clsx and tailwind-merge (cn function) for conflict-free Tailwind class resolution.",
+      "tags": [
+        "utility",
+        "tailwind",
+        "classnames"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/styles.css",
+      "type": "file",
+      "name": "styles.css",
+      "filePath": "src/styles.css",
+      "summary": "Master design system stylesheet defining OKLCH color palettes (rose, blush, gold, ivory), typography font families, 3D envelope keyframes, gate transitions, and custom utility classes.",
+      "tags": [
+        "styling",
+        "css",
+        "theme",
+        "keyframes"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Node project manifest declaring Next.js 15, React 19, Tailwind CSS v4, Radix UI primitives, Lucide icons, and build scripts.",
+      "tags": [
+        "config",
+        "dependencies",
+        "build"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "TypeScript configuration enabling ESNext, strict type checks, JSX preservation, and path aliases (@/* -> src/*).",
+      "tags": [
+        "config",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project documentation outlining the wedding invitation concept, Lovable deployment link, and local dev instructions.",
+      "tags": [
+        "document",
+        "documentation"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/EnvelopeGate.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/HeroVideo.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/MusicToggle.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/PetalField.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/ScratchReveal.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/Gallery.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/Countdown.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/Timeline.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/Venue.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/invite/Reveal.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/data/invite.ts",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/layout.tsx",
+      "target": "file:src/styles.css",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/invite/HeroVideo.tsx",
+      "target": "file:src/data/invite.ts",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/invite/ScratchReveal.tsx",
+      "target": "file:src/data/invite.ts",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/invite/Countdown.tsx",
+      "target": "file:src/data/invite.ts",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/invite/Timeline.tsx",
+      "target": "file:src/data/invite.ts",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/invite/Timeline.tsx",
+      "target": "file:src/components/invite/Reveal.tsx",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/invite/Venue.tsx",
+      "target": "file:src/data/invite.ts",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/invite/Reveal.tsx",
+      "target": "file:src/hooks/use-reveal.ts",
+      "type": "imports",
+      "direction": "out",
+      "weight": 1
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:app-routing",
+      "name": "App Router & Entry",
+      "description": "Next.js App Router root layout, page orchestration, and HTTP routing endpoints.",
+      "nodeIds": [
+        "file:src/app/page.tsx",
+        "file:src/app/layout.tsx",
+        "file:src/app/not-found.tsx"
+      ]
+    },
+    {
+      "id": "layer:interactive-experience",
+      "name": "Interactive Experience Components",
+      "description": "Custom UI components crafting the wedding invitation story: 3D envelope, hero video, audio, scratch card, countdown, gallery, timeline, and venue.",
+      "nodeIds": [
+        "file:src/components/invite/EnvelopeGate.tsx",
+        "file:src/components/invite/HeroVideo.tsx",
+        "file:src/components/invite/MusicToggle.tsx",
+        "file:src/components/invite/ScratchReveal.tsx",
+        "file:src/components/invite/Gallery.tsx",
+        "file:src/components/invite/Countdown.tsx",
+        "file:src/components/invite/Timeline.tsx",
+        "file:src/components/invite/Venue.tsx",
+        "file:src/components/invite/PetalField.tsx",
+        "file:src/components/invite/Reveal.tsx"
+      ]
+    },
+    {
+      "id": "layer:data-and-hooks",
+      "name": "Data Model & React Hooks",
+      "description": "Domain datasets, Sanskrit shlokas, event timelines, and custom observer hooks.",
+      "nodeIds": [
+        "file:src/data/invite.ts",
+        "file:src/hooks/use-reveal.ts",
+        "file:src/hooks/use-mobile.tsx",
+        "file:src/lib/utils.ts"
+      ]
+    },
+    {
+      "id": "layer:design-and-config",
+      "name": "Design System & Configuration",
+      "description": "Global design tokens, OKLCH styling, build setup, TypeScript rules, and docs.",
+      "nodeIds": [
+        "file:src/styles.css",
+        "config:package.json",
+        "config:tsconfig.json",
+        "document:README.md"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project Overview & Structure",
+      "description": "Start here to understand the Next.js 15 App Router structure and the high-level orchestration in page.tsx.",
+      "nodeIds": [
+        "document:README.md",
+        "file:src/app/page.tsx"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Interactive 3D Envelope Opening Gate",
+      "description": "Discover how the realistic 3D envelope flap rotation, wax seal, and card extraction animations are structured.",
+      "nodeIds": [
+        "file:src/components/invite/EnvelopeGate.tsx",
+        "file:src/styles.css"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Background Music & Loop Controller",
+      "description": "Learn how the hidden YouTube IFrame API audio player automatically starts upon envelope opening and loops seamlessly between 0:17 and 1:20.",
+      "nodeIds": [
+        "file:src/components/invite/MusicToggle.tsx"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Cinematic Hero & Ambient Petals",
+      "description": "Explore the looping hero background video, parallax translation, and falling petal particle system.",
+      "nodeIds": [
+        "file:src/components/invite/HeroVideo.tsx",
+        "file:src/components/invite/PetalField.tsx"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Interactive Scratch Card & Calendar ICS Generation",
+      "description": "Inspect the HTML5 Canvas 2D scratch interaction with destination-out compositing and client-side .ics event creation.",
+      "nodeIds": [
+        "file:src/components/invite/ScratchReveal.tsx"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Touch Gesture Photo Gallery",
+      "description": "Examine the custom pointer-events swipeable carousel with drag thresholds, smooth springs, and keyboard support.",
+      "nodeIds": [
+        "file:src/components/invite/Gallery.tsx"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Countdown Timer, Itinerary Timeline & Venue Map",
+      "description": "Understand the real-time countdown calculation, multi-day wedding itinerary timeline, and venue mapping.",
+      "nodeIds": [
+        "file:src/components/invite/Countdown.tsx",
+        "file:src/components/invite/Timeline.tsx",
+        "file:src/components/invite/Venue.tsx"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Wedding Data Contract & Configuration",
+      "description": "Review the centralized wedding invite data structure defining shlokas, families, timings, and venue metadata.",
+      "nodeIds": [
+        "file:src/data/invite.ts"
+      ]
+    }
+  ]
+}
